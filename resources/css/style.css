@@ -327,10 +327,10 @@ a {
 
 /*Thesis exhibit*/
 .exhibit{
-  bottom: 1rem;
   width: 100%;
-  display: -webkit-box;
-  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  padding-top: 16px;
 
 }
 .left-exhibit{
@@ -360,14 +360,14 @@ a {
     flex-direction: column;
     width: 32.4rem;
     justify-content: flex-start;
+    margin-left: 1.5rem;
     margin-top: 34px;
-    right: auto;
   }
-  .small{
+  .smalls{
     display: flex;
     float: right;
   }
-  .small .pic{
+  .smalls .pic{
     height: auto;
     width: 35%;
     margin: 16px;
