@@ -70,11 +70,25 @@ a {
   }
   .mobile ul{
     align-items: center;
-    width: 100%;
+    width: 90%;
   }
   .mobile li{
     padding: 0;
   }
+}
+@media only screen and (max-width:592px){
+	header{
+		justify-content: space-between;
+    margin: 0;
+    padding: inherit;
+	}
+	header .mobile{
+		display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+  	flex-basis: 50%;
+	}
 }
 /*Jumbotron style*/
 .jumbotron {
@@ -122,7 +136,7 @@ a {
  margin: 0;
 }
 
-.btn {
+.jumbotron .btn {
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -142,7 +156,7 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
   }
 
-@media only screen and(max-width: 700px){
+@media only screen and (max-width:700px){
   .jumbotron{
     display: block;
   }
@@ -157,9 +171,10 @@ a {
     margin-right: 1rem;
     padding: 1rem;
     width: 100%;
+    height: auto;
   }
   .jumbotron-text h1{
-    font-size: 1.75rem;
+    font-size: 1.35rem;
     margin-right: 0;
     width: 100%;
   }
@@ -167,12 +182,34 @@ a {
   .jumbotron .btn{
     padding-top: 8px;
     padding-bottom: 8px;
-    width: 85%;
+    width: 90%;
   }
 
   .jumbotron-text h2{
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
+}
+@media only screen and (max-width: 500px){
+  .jumbotron{
+    flex-direction: column;
+  }
+  .jumbotron-image{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .jumbotron-image img{
+    width: 100%;
+    height: auto;
+    }
+    .jumbotron-text{
+      width: 100%;
+      padding: 1rem;
+      height: auto;
+      text-align: left;
+    }
+
 }
 
   /*Content styling*/
@@ -258,12 +295,14 @@ a {
     width: 100%;
   }
   .left{
-    display: block;
     width: 90%;
   }
   .right{
     padding: 1rem 1rem 2rem 1rem;
   }
+	.jumbotron-text{
+		margin-top: auto;
+	}
   .small{
     display: block;
   }
@@ -288,7 +327,7 @@ a {
 
 }
 
-/*Third section*/
+/*Third section: courses*/
 .section-courses{
   background-color: #d6d6d6;
   padding: 32px 72px;
