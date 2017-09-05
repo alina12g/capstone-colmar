@@ -11,85 +11,93 @@ a {
     padding-bottom: 8px;
     width: 40%;
 }
-.header{
-  display: flex;
-  padding: 34px;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  background-color: white;
-  margin: 0;
-}
-.header img{
-  width: 32px;
-  height: 32px;
-}
-.header p{
-  flex-grow: 0.9;
-  font-size: 32px;
-  color: #757575;
-  margin-right: 32px;
-}
-.header p strong{
-  color:#212020;
-}
-.desktop ul {
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-.desktop li {
-  display: inline-block;
-  padding: 1rem;
-  justify-content: space-around;
-  margin-left: 24px;
-}
-.desktop li a{
-  color: #393E46;
-  margin-left: 16px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.mobile{
+
+/* header section */
+
+.mobile-header {
   display: none;
 }
 
-@media only screen and (max-width: 700px){
-  .desktop{
-    display: none;
-  }
-  .header p{
-    display: none;
-  }
-  .header .logo{
-    display: none;
-  }
-  .mobile{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .mobile ul{
-    align-items: center;
-    width: 90%;
-  }
-  .mobile li{
-    padding: 0;
-  }
+.desktop-header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  height: 4rem;
 }
-@media only screen and (max-width:592px){
-	header{
-		justify-content: space-between;
-    margin: 0;
-    padding: inherit;
-	}
-	header .mobile{
-		display: flex;
-    justify-content: space-between;
+
+.desktop-header .logo {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+#logo-text {
+  font-size: 1.25rem;
+  color: Gray;
+}
+
+#logo-text strong {
+  color: #000000;
+}
+
+.desktop-header nav {
+  margin-right: 1.5rem;
+  z-index: 1;
+}
+
+.desktop-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #404040;
+  justify-content: flex-end;
+}
+
+.desktop-nav a:hover {
+  background-color: #adccff;
+}
+
+.desktop-nav a:active {
+  color: black;
+  background-color: #afffb2;
+}
+
+@media only screen and (max-width: 640px) {
+  .desktop-header {
+    display: none;
+  }
+  .mobile-header {
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-  	flex-basis: 50%;
-	}
+    background-color: white;
+    border-bottom: 1px solid LightGray;
+    height: 64px;
+    z-index: 1;
+
+  }
+  .mobile-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+  }
+  .mobile-nav a{
+
+  }
+  .mobile-nav img {
+    vertical-align: middle;
+    justify-content: space-between;
+  }
 }
+
+
 /*Jumbotron style*/
 .jumbotron {
   display: flex;
@@ -123,26 +131,26 @@ a {
 .jumbotron-text h1 {
   margin: 2rem 1.5rem 2rem 0;
   color: #52524E;
-  font-size: 32px;
+  font-size: 2rem;
   padding-bottom: 24px;
   font-weight: bold;
 }
 
 .jumbotron-text h2 {
   color: #52524E;
- font-size: 24px;
- padding-bottom: 24px;
- line-height: normal;
- margin: 0;
+  font-size: 24px;
+  padding-bottom: 24px;
+  line-height: normal;
+  margin: 0;
 }
 
 .jumbotron .btn {
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  width: 120px;
+  width: 16rem;
   max-width: 86%;
-  padding: 16px 8px;
+  padding: 0.5rem 0;;
   margin: 1.5rem 1.5rem 2rem 1rem;
   text-decoration: none;
   background-color: #404040;
@@ -158,10 +166,9 @@ a {
 
 @media only screen and (max-width:700px){
   .jumbotron{
-    display: block;
+    flex-direction: column;
   }
   .jumbotron-image img{
-    padding: 0;
     margin: 0;
     width: 100%;
   }
@@ -169,20 +176,22 @@ a {
     display: inline-block;
     flex-direction: column;
     margin-right: 1rem;
-    padding: 1rem;
-    width: 100%;
+    padding-bottom: 3rem;
+    width: 90%;
     height: auto;
   }
   .jumbotron-text h1{
     font-size: 1.35rem;
     margin-right: 0;
     width: 100%;
+    top: 1rem;
   }
 
   .jumbotron .btn{
     padding-top: 8px;
     padding-bottom: 8px;
     width: 90%;
+    margin-bottom: 2rem;
   }
 
   .jumbotron-text h2{

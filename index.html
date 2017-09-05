@@ -10,22 +10,29 @@
 
     <body>
 
-      <nav class="header">
-        <img class="logo" src="./resources/images/ic-logo.svg" alt="Lion">
-        <p><strong>Colmar</strong> Academy</p>
-        <ul class="desktop">
-          <li><a href="#">On Campus</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="#">or companies</a></li>
-          <li><a href="#">Sign in</a></li>
-        </ul>
-        <ul class="mobile">
-          <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
-        </ul>
-      </nav>
+<header class="desktop-header">
+  <div class="logo">
+      <img src="resources/images/ic-logo.svg" alt="Logo" />
+      <span id="logo-text"><strong>COLMAR</strong> ACADEMY</span>
+    </div>
+    <nav class="desktop-nav">
+      <a href="#">On campus</a>
+      <a href="#">Online</a>
+      <a href="#">For companies</a>
+      <a href="#">Sign in</a>
+    </nav>
+  </header>
+  <!--For mobile header-->
+  <header class="mobile-header">
+    <nav class="mobile-nav">
+      <a href="#"><img src="resources/images/ic-logo.svg" alt="Logo"></a>
+      <a href="#"><img src="resources/images/ic-on-campus.svg" alt="Desk"></a>
+      <a href="#"><img src="resources/images/ic-online.svg" alt="Online"></a>
+      <a href="#"><img src="resources/images/ic-login.svg" alt="Login"></a>
+    </nav>
+  </header>
+      <!--End of header-->
+
       <!--Banner intro-->
   <div class="jumbotron">
     <div class="jumbotron-image">
@@ -39,7 +46,7 @@
           <a href="#" class="btn">Start here</a>
      </div>
    </div>
-<!--Content big banner-->
+<!--Content big banner News-->
     <div class="content">
 <!--Left side of the content-->
       <div class="left">
@@ -228,7 +235,9 @@
     </div>
   </div>
 </div>
+<!--End thesis-->
 
+<!--Footer-->
 <footer>
   <span>	&copy;2016 Colmar Academy. All rights reserved</span>
   <nav id="footer-desktop">
