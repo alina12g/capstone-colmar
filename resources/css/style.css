@@ -22,6 +22,7 @@ a {
 }
 
 .desktop-header {
+  z-index: 100;
   position: fixed;
   display: flex;
   align-items: center;
@@ -359,7 +360,7 @@ a {
       display: none;
     }
     .mobile-header {
-      /*position: fixed;*/
+      position: fixed;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -472,6 +473,10 @@ a {
 
 /*Content left and right sections*/
 @media only screen and (max-width: 700px) {
+
+  body{
+    overflow-x: hidden !important;
+  }
   .content{
     display: block;
     flex-direction: column;
@@ -590,10 +595,15 @@ media only screen and (max-width: 700px) {
 }
 /*Video section media*/
 @media only screen and (max-width: 700px){
+  .left-exhibit{
+    width: 100%;
+  }
+
   .left-exhibit video{
-    width: 90%;
+  
     padding-top: 16px;
     padding-bottom: 24px;
+    text-align: center;
   }
   .left-exhibit h1 {
     display: none;
