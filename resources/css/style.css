@@ -2,7 +2,10 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
-
+body{
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
 }
@@ -26,7 +29,7 @@ a {
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #e8e8e8;
-  height: 4rem;
+  height: 64px;
 }
 
 .desktop-header .logo {
@@ -66,45 +69,15 @@ a {
   background-color: #afffb2;
 }
 
-@media only screen and (max-width: 640px) {
-  .desktop-header {
-    display: none;
-  }
-  .mobile-header {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    border-bottom: 1px solid LightGray;
-    height: 64px;
-    z-index: 1;
-
-  }
-  .mobile-nav {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    margin: 0 1.5rem;
-  }
-  .mobile-nav a{
-
-  }
-  .mobile-nav img {
-    vertical-align: middle;
-    justify-content: space-between;
-  }
-}
 
 
 /*Jumbotron style*/
 .jumbotron {
   display: flex;
   position: relative;
-  top: 4rem;
   align-items: center;
   background-color: #ededed;
+  top: 4rem;
 }
 
 .jumbotron-image {
@@ -129,7 +102,7 @@ a {
 }
 
 .jumbotron-text h1 {
-  margin: 2rem 1.5rem 2rem 0;
+  margin: 2rem 1.5rem 2rem 0rem;
   color: #52524E;
   font-size: 2rem;
   padding-bottom: 24px;
@@ -140,7 +113,6 @@ a {
   color: #52524E;
   font-size: 24px;
   padding-bottom: 24px;
-  line-height: normal;
   margin: 0;
 }
 
@@ -150,7 +122,7 @@ a {
   justify-content: center;
   width: 16rem;
   max-width: 86%;
-  padding: 0.5rem 0;;
+  padding: 1rem 0;;
   margin: 1.5rem 1.5rem 2rem 1rem;
   text-decoration: none;
   background-color: #404040;
@@ -164,62 +136,6 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
   }
 
-@media only screen and (max-width:700px){
-  .jumbotron{
-    flex-direction: column;
-  }
-  .jumbotron-image img{
-    margin: 0;
-    width: 100%;
-  }
-  .jumbotron-content{
-    display: inline-block;
-    flex-direction: column;
-    margin-right: 1rem;
-    padding-bottom: 3rem;
-    width: 90%;
-    height: auto;
-  }
-  .jumbotron-text h1{
-    font-size: 1.35rem;
-    margin-right: 0;
-    width: 100%;
-    top: 1rem;
-  }
-
-  .jumbotron .btn{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 90%;
-    margin-bottom: 2rem;
-  }
-
-  .jumbotron-text h2{
-    font-size: 1.1rem;
-  }
-}
-@media only screen and (max-width: 500px){
-  .jumbotron{
-    flex-direction: column;
-  }
-  .jumbotron-image{
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-  .jumbotron-image img{
-    width: 100%;
-    height: auto;
-    }
-    .jumbotron-text{
-      width: 100%;
-      padding: 1rem;
-      height: auto;
-      text-align: left;
-    }
-
-}
 
   /*Content styling*/
 .content{
@@ -297,49 +213,12 @@ a {
 .small .mobile{
   display: none;
 }
-@media only screen and (max-width: 700px) {
-  .content{
-    display: block;
-    flex-direction: column;
-    width: 100%;
-  }
-  .left{
-    width: 90%;
-  }
-  .right{
-    padding: 1rem 1rem 2rem 1rem;
-  }
-	.jumbotron-text{
-		margin-top: auto;
-	}
-  .small{
-    display: block;
-  }
-  .pic {
-    display: none;
-  }
-  .pic-mobile{
-    display: block;
-    width: 80%;
-  }
-  .pic-mobile img{
-    width: 90%;
-    margin-right: 0.5rem;
-  }
-  .info{
-    display: block;
-    margin-bottom: 1rem;
-  }
-  .small .hightlight{
-    display: none;
-  }
-
-}
+@
 
 /*Third section: courses*/
 .section-courses{
   background-color: #d6d6d6;
-  padding: 32px 72px;
+  /*padding: 32px 72px;*/
 }
 .section-title{
   color: #52524E;
@@ -394,43 +273,6 @@ a {
 }
 .courses-names{
   display: none;
-}
-/*mobile*/
-@media only screen and (max-width: 700px) {
-.section-courses{
-  width: 100%auto;
-}
-  #List-courses {
-    display: block;
-    background-color: white;
-    width: 100%;
-  }
-
-  .courses {
-    display: none;
-  }
-
-  .courses-names{
-    display: block;
-    width: 100%;
-  }
-
-  .button2 {
-    width: 85%;
-    padding-top: 16px;
-    padding-bottom: 24px;
-    padding-left: 16px;
-    padding-right: 32px;
-    background-color: #f7f7f7;
-    margin-left: 1rem;
-    margin-bottom: 8px;
-    font-weight: bolder;
-  }
-
-  .button2:hover {
-    background-color: #f7af42;
-    color: white;
-  }
 }
 
 /*Thesis exhibit*/
@@ -490,22 +332,7 @@ a {
     width: 100%;
     margin-bottom: 1rem;
   }
-  @media only screen and (max-width: 700px){
-    .left-exhibit video{
-      width: 90%;
-      padding-top: 16px;
-      padding-bottom: 24px;
-    }
-    .left-exhibit h1 {
-      display: none;
-    }
-    .left-exhibit p{
-      display: none;
-    }
-    .right-exhibit{
-      display: none;
-    }
-  }
+
   /*Footer*/
   footer{
     padding-top: 16px;
@@ -524,6 +351,262 @@ a {
     padding-right: 16px;
     color: #52524E;
   }
+  /*Media style*/
+
+  /*Header*/
+  @media only screen and (max-width: 640px) {
+    .desktop-header {
+      display: none;
+    }
+    .mobile-header {
+      /*position: fixed;*/
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: #fff;
+      border-bottom: 1px solid LightGray;
+      height: 64px;
+      z-index: 1;
+
+    }
+    .mobile-nav {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      margin: 0 1.5rem;
+    }
+    .mobile-nav img {
+      vertical-align: middle;
+      justify-content: space-between;
+    }
+  }
+  /*Banner */
+  @media only screen and (max-width:700px){
+    .jumbotron{
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      width: 100%;
+    }
+    .jumbotron-image img{
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
+    .jumbotron-content{
+      display: inline-block;
+      flex-direction: column;
+      margin-right: 1rem;
+      padding-bottom: 3rem;
+      width: 90%;
+      height: auto;
+    }
+    .jumbotron-text{
+      min-width: 90%;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .jumbotron-text h1{
+      font-size: 1.35rem;
+      margin-right: 0;
+      width: 100%;
+      top: 1rem;
+    }
+
+    .jumbotron .btn{
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 90%;
+      margin-bottom: 2rem;
+
+    }
+
+    .jumbotron-text h2{
+      font-size: 1rem;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .jumbotron{
+      flex-direction: column;
+    }
+    .jumbotron-image{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+    .jumbotron-image img{
+      width: 100%;
+      height: auto;
+      }
+    .jumbotron-text{
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+        text-align: left;
+      }
+
+    .jumbotron-content .btn{
+        width: 100%;
+        top: 1rem;
+      }
+    .jumbotron-text h1{
+        padding-top: 32px;
+        padding-right: 16px;
+        padding-bottom: 38px;
+        font-size: 32px;
+      }
+    .jumbotron-text h2{
+        padding-bottom: 2px;
+        font-size: 30px;
+      }
+    /*.jumbotron .btn{
+        margin-bottom: 2rem;
+      }*/
+
+  }
+
+/*Content left and right sections*/
+@media only screen and (max-width: 700px) {
+  .content{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left{
+    width: 90%;
+  }
+  .right{
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+	.jumbotron-text{
+		margin-top: auto;
+	}
+  .small{
+    display: block;
+  }
+  .pic {
+    display: none;
+  }
+  .pic-mobile{
+    display: block;
+    width: 80%;
+  }
+  .pic-mobile img{
+    width: 90%;
+    margin-right: 0.5rem;
+  }
+  .info{
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .small .hightlight{
+    display: none;
+  }
+
+}
+/*Courses*/
+/*mobile*/
+@media only screen and (max-width: 700px) {
+.section-courses{
+  width: 100%;
+}
+  #List-courses {
+    display: block;
+    background-color:#fff8ed;
+    width: 100%;
+  }
+
+  .courses {
+    display: none;
+  }
+
+  .courses-names{
+    display: block;
+    width: 100%;
+  }
+
+  .button2 {
+    width: 85%;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 32px;
+    background-color: #f7f7f7;
+    margin-left: 1rem;
+    margin-bottom: 8px;
+    font-weight: bolder;
+    border-radius: 6px;
+  }
+
+  .button2:hover {
+    background-color: #f7af42;
+    color: white;
+  }
+}
+media only screen and (max-width: 700px) {
+  .content{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left{
+    width: 90%;
+  }
+  .right{
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+	.jumbotron-text{
+		margin-top: auto;
+	}
+  .small{
+    display: block;
+  }
+  .pic {
+    display: none;
+  }
+  .pic-mobile{
+    display: block;
+    width: 80%;
+  }
+  .pic-mobile img{
+    width: 90%;
+    margin-right: 0.5rem;
+  }
+  .info{
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .small .hightlight{
+    display: none;
+  }
+
+}
+/*Video section media*/
+@media only screen and (max-width: 700px){
+  .left-exhibit video{
+    width: 90%;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .left-exhibit h1 {
+    display: none;
+  }
+  .left-exhibit p{
+    display: none;
+  }
+  .right-exhibit{
+    display: none;
+  }
+}
+
+  /*Footer*/
   @media only screen and (max-width: 700px){
     #footer-desktop{
       display: none;
