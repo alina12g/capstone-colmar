@@ -252,7 +252,7 @@ a {
   color: black;
   padding-bottom: 24px;
   height: 15rem;
-  background-color: white;
+  background-color: #fbfbfb;;
 }
 .title-course h3{
   font-size: 28px;
@@ -600,7 +600,7 @@ media only screen and (max-width: 700px) {
   }
 
   .left-exhibit video{
-  
+
     padding-top: 16px;
     padding-bottom: 24px;
     text-align: center;
